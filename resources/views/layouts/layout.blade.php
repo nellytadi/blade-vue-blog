@@ -7,6 +7,7 @@
     <title>Blog</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -28,21 +29,6 @@
         </div>
     </nav>
 </header>
-<style>
-    main{
-        margin-top: 100px;
-    }
-    .font-small{
-        font-size: smaller;
-    }
-    .card{
-        margin-bottom: 20px;
-    }
-    footer {
-        background: #343a40;
-        color: #fff;
-    }
-</style>
 
 
 @yield('content')
