@@ -1,8 +1,9 @@
 ## Converting Laravel Applications from Blade Template to Vue Js
 
-This repository is used to explain how to convert Laravel Blade apps to Laravel Vuejs applications. 
+This repository is used to explain how to convert Laravel Blade apps to Laravel Vuejs applications.   
 
-The code on the `main` repository consists of your starter project- with `blade` views.
+The code on the `main` repository consists of your starter project- with `blade` views.  
+
 The code on the `final-vue` repository consists of the finished project - Laravel/Vuejs application.
 
 
