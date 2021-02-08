@@ -51,7 +51,6 @@ class BlogController extends Controller
            'author' => $request->input('author')
         ]);
 
-//        return redirect()->back()->with(["status"=>"Your blog post has been created successfully"]);
         return response()->json(["status"=>"Your blog post has been created successfully"]);
     }
 
@@ -65,7 +64,6 @@ class BlogController extends Controller
     {
         $blog = Blog::find($id);
         return new BlogResource($blog);
-
     }
 
     /**
