@@ -8,7 +8,7 @@
         <div class="container">
             <div class="blog-post">
                 <h2 class="blog-post-title">{{$blog->title}}</h2>
-                <p class="blog-post-meta">{{$blog->created_at->diffForHumans()}} by <a href="#">{{$blog->author}}</a></p>
+                <p class="blog-post-meta">{{$blog->created_at->diffForHumans()}} by <b>{{$blog->author}}</b></p>
 
                 <div>{!! $blog->blog !!}</div>
 
