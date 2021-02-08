@@ -14,9 +14,9 @@
 <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Vue-Blade</a>
+        <a class="navbar-brand" href="/">Vue-Blade</a>
 
-        <div class="mx-auto" >
+        <div class="mx-auto">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
