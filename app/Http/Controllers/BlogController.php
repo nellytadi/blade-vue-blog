@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Resources\BlogCollection;
+use App\Http\Resources\BlogResource;
 use App\Models\Blog;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -12,10 +14,12 @@ class BlogController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): View
+    public function index(): BlogCollection
     {
         $blogs = Blog::latest()->get();
-        return view('welcome',compact('blogs'));
+
+        return new BlogCollection($blogs);
+
     }
 
     /**
@@ -47,19 +51,21 @@ class BlogController extends Controller
            'author' => $request->input('author')
         ]);
 
-        return redirect()->route('index');
+//        return redirect()->back()->with(["status"=>"Your blog post has been created successfully"]);
+        return response()->json(["status"=>"Your blog post has been created successfully"]);
     }
 
     /**
      * Display the specified resource.
      *
      * @param int $id
-     * @return View
+     * @return BlogResource
      */
-    public function show(int $id): View
+    public function show(int $id): BlogResource
     {
         $blog = Blog::find($id);
-        return view('single',compact('blog'));
+        return new BlogResource($blog);
+
     }
 
     /**

@@ -5,17 +5,17 @@ const routes = [
     {
         path: '/',
         name:'index',
-        component:  require('./views/Welcome').default,
+        component:  require('./views/Welcome.vue').default,
     },
     {
         path: '/create',
         name:'create',
-        component:  require('./views/Create').default,
+        component:  require('./views/Create.vue').default,
     },
     {
-        path: '/show/{id}',
+        path: '/show/:id',
         name:'show',
-        component:  require('./views/Single').default,
+        component:  require('./views/Single.vue').default,
     },
 ];
 
