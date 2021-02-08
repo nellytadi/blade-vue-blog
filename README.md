@@ -9,7 +9,7 @@ The code on the `final-vue` repository consists of the finished project - Larave
 - Find full tutorial on medium here (https://meduim.com)
 - Find full tutorial on dev.to here (https://dev.to)
 
-##Steps to run Application locally
+## Steps to run Application locally
 
 - Clone the project `git clone https://github.com/nellytadi/blade-vue-blog.git`
 - Run `composer install`
