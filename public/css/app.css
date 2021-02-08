@@ -1,18 +1,1 @@
 
-main{
-    margin-top: 100px;
-}
-.font-small{
-    font-size: smaller;
-}
-.card{
-    margin-bottom: 20px;
-}
-footer {
-    background: #343a40;
-    color: #fff;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    font-size: 12px;
-}
